@@ -47,10 +47,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB           &kp N1        &kp N2            &kp N3        &kp N4           &kp N5          &kp N6      &kp N7             &kp N8           &kp N9                &kp N0                &kp DELETE
-&ht LCTRL ESCAPE  &kp C_NEXT    &kp C_PLAY_PAUSE  &kp C_NEXT    &kp PRINTSCREEN  &trans          &kp LEFT    &kp DOWN           &kp UP           &kp RIGHT             &trans                &bt BT_CLR
-&kp LSHFT         &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2  &bt BT_SEL 3     &bt BT_SEL 4    &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp RIGHT_SHIFT
-                                                  &kp LGUI      &trans           &kp SPACE       &kp RET     &trans             &kp RALT
+&kp TAB           &kp N1          &kp N2             &kp N3           &kp N4                &kp N5                  &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp DELETE
+&ht LCTRL ESCAPE  &kp C_PREVIOUS  &kp C_PLAY_PAUSE   &kp C_NEXT       &kp PRINTSCREEN       &trans                  &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans        &bt BT_CLR
+&kp LSHFT         &kp K_MUTE      &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp RIGHT_SHIFT
+                                                     &kp LGUI         &trans                &kp SPACE               &kp RET       &trans        &kp RALT
             >;
         };
 
@@ -80,10 +80,19 @@
 
         G2 {
             bindings = <
-&kp TAB    &kp Q      &kp W  &kp E     &kp R   &kp T        &trans  &trans  &trans  &trans  &trans  &trans
-&kp ESC    &kp A      &kp S  &kp D     &kp F   &kp I        &trans  &trans  &trans  &trans  &trans  &trans
-&kp LSHFT  &kp LCTRL  &kp X  &kp C     &kp V   &kp M        &trans  &trans  &trans  &trans  &trans  &trans
-                             &kp LALT  &trans  &kp SPACE    &trans  &trans  &trans
+&trans  &kp BACKSPACE  &trans        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &trans  &trans  &trans  &trans  &trans  &trans
+&tog 0  &trans         &trans        &trans        &kp NUMBER_4  &kp N5          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL      &kp NUMBER_6  &kp H         &kp Y         &kp M           &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp LALT      &trans        &kp SPACE       &trans  &trans  &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
