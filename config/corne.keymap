@@ -68,5 +68,23 @@
                              &kp LGUI  &trans    &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
+
+        Gaming {
+            bindings = <
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp A  &kp S  &kp D     &kp F  &kp G        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &trans  &trans  &trans  &trans  &trans  &trans
+                         &kp LALT  &mo 4  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        G2 {
+            bindings = <
+&kp TAB    &kp Q      &kp W  &kp E     &kp R   &kp T        &trans  &trans  &trans  &trans  &trans  &trans
+&kp ESC    &kp A      &kp S  &kp D     &kp F   &kp I        &trans  &trans  &trans  &trans  &trans  &trans
+&kp LSHFT  &kp LCTRL  &kp X  &kp C     &kp V   &kp M        &trans  &trans  &trans  &trans  &trans  &trans
+                             &kp LALT  &trans  &kp SPACE    &trans  &trans  &trans
+            >;
+        };
     };
 };
