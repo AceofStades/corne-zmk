@@ -16,6 +16,6 @@ manifest:
           revision: main
         - name: zmk-nice-oled
           remote: AceofStades
-          revision: main
+          revision: M165437
     self:
         path: config
