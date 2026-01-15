@@ -4,23 +4,18 @@ manifest:
           url-base: https://github.com/zmkfirmware
         - name: urob
           url-base: https://github.com/urob
-        - name: mctechnology17
-          url-base: https://github.com/mctechnology17
-        - name: M165437
-          url-base: https://github.com/M165437
+        - name: AceofStades
+          url-base: https://github.com/AceofStades
     projects:
         - name: zmk
           remote: zmkfirmware
           revision: v0.3.0
           import: app/west.yml
-        - name: zmk-nice-oled
-          remote: mctechnology17
-          revision: main
         - name: zmk-helpers
           remote: urob
           revision: main
-        - name: nice-view-gem
-          remote: M165437
+        - name: zmk-nice-oled
+          remote: AceofStades
           revision: main
     self:
         path: config
